@@ -5,8 +5,8 @@
         .module('app')
         .factory('ItemsService', ItemsService);
 
-    ItemsService.$inject = ['$http', '$resource'];
-    function ItemsService($http, $resource) {
+    ItemsService.$inject = ['$http'];
+    function ItemsService($http) {
     	var service = {};
         service.getAll = getAll;
         service.add = create;
