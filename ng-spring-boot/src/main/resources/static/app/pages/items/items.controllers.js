@@ -11,12 +11,9 @@
         var vm = this;
         vm.items =[];
         vm.newItem = {};
-        vm.newItem.name = "new name";
-        
-        
+        vm.newItem.name = "new item";
         
         vm.addItem = function() {
-        	debugger;
         	ItemsService.add(vm.newItem).then(onSuccess, onFailure);
         	
         	function onSuccess(data) {           
@@ -25,7 +22,7 @@
             }
 
             function onFailure(error) {
-                debugger;
+                alert (error);
             }
         }
 
@@ -37,7 +34,7 @@
              }
 
              function onFailure(error) {
-                debugger;
+            	 alert (error);
              }
         }
        
@@ -50,7 +47,7 @@
             }
 
             function onFailure(error) {
-                debugger;
+            	alert (error);
             }
         }
         
@@ -62,7 +59,7 @@
             }
 
             function onFailure(error) {
-                debugger;
+            	alert (error);
             }
        }
         
